@@ -1,38 +1,148 @@
-.App {
+
+.wrapper {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  max-width: 100%;
+  background-color: #d3b714;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 10px;
+  color: #000
+}
+
+.nav_menu a {
+  font-size: 1.5em;
+}
+
+.nav_menu-burger {
+  display: none;
+}
+
+#menu_toggle {
+  display: none;
+}
+
+.aside_visibility_1,
+.aside_visibility_2 {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-basis: 100%;
+
+}
+
+article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article h1 {
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content_block-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: baseline;
+  flex-basis: 300px;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #9F9F9F;
 }
 
-.App-link {
-  color: #61dafb;
+.card p {
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #C7B7B7;
+}
+
+.card_button {
+  width: 50px;
+  background-color: #685174;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.card_button:hover {
+  background-color: #3c2c44;
+  cursor: pointer;
+}
+
+.card_button a {
+  color: #fff;
+}
+
+.aside {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+  flex-basis: 80%;
+
+}
+
+.aside_1 {
+  background-color: #C798B9;
+  order: -1;
+}
+
+.aside_2 {
+  background-color: #9CB1C7;
+}
+
+footer {
+  max-width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #82E682;
+  padding: 20px;
+}
+
+.aside_dropdown1,
+.aside_dropdown2 {
+  background-color: purple;
+  display: block;
 }
